@@ -14,6 +14,16 @@
   color: var(--Blue-800);
 }
 
+.email__section {
+  width: 100%;
+  height: 100%;
+}
+
+.email__section__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .email__section__img {
   width: 100%;
   height: 50vh;
@@ -24,7 +34,7 @@
   border-radius: 0 0 1rem 1rem;
 }
 
-.email__section__container {
+.email__section__content__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,9 +101,10 @@
   color: hsl(0, 0%, 58%, 0.5);
 }
 
-button {
+a {
   margin-top: 1rem;
   width: 100%;
+  text-align: center;
   padding: 1rem;
   background-color: var(--Blue-700);
   color: var(--White);
@@ -102,36 +113,88 @@ button {
   transition: all ease-in-out 0.3s;
 }
 
-button:hover {
+a:hover {
   background: linear-gradient(270deg, hsl(4, 100%, 67%) 50%, hsl(0, 0%, 58%));
 }
 
 .success__message {
-  padding: 7rem 2rem 2rem 2rem;
+  width: 100%;
+  height: 100%;
 }
 
-.success__message__container h2 {
+.success__message__container {
+  padding: 7rem 2rem 2rem 2rem;
+}
+.success__message__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.success__message__content h2 {
   margin-top: 1rem;
   font-size: 2rem;
   font-weight: 700;
 }
 
-.success__message__container p {
+.success__message__content p {
   margin-top: 1rem;
 }
 
-.success__message__container p span {
+.success__messbuttonge__content p span {
   font-weight: 700;
 }
 
-.success__message__container button {
-  margin-top: 10rem;
+.dismissMessage {
+  margin-top: 1rem;
 }
 
-.active {
-  display: block;
-}
+@media screen and (min-width: 768px) {
+  .email__section {
+    background-color: var(--Blue-800);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.disabled {
-  display: none;
+  .email__section__container {
+    background-color: var(--White);
+    height: 30rem;
+    width: 100%;
+    max-width: 55rem;
+    flex-direction: row;
+    padding: 1rem;
+    border-radius: 1rem;
+    gap: 2rem;
+  }
+
+  .email__section__img {
+    height: 100%;
+    width: 50%;
+    background: url("../assets/images/illustration-sign-up-desktop.svg") cover
+      no-repeat center/center;
+    order: 2;
+    border-radius: 1rem;
+  }
+
+  .success__message {
+    background-color: var(--Blue-800);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .success__message__container {
+    background-color: var(--White);
+    height: 27rem;
+    width: 100%;
+    max-width: 25rem;
+    flex-direction: row;
+    padding: 2rem;
+    border-radius: 1rem;
+    gap: 2rem;
+  }
+
+  .success__message__container a {
+    margin-top: 1rem;
+  }
 }

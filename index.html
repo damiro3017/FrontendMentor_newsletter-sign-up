@@ -13,36 +13,29 @@
 
 <body>
     <section class="email__section">
-        <div class="email__section__img"></div>
         <div class="email__section__container">
-            <div class="email__section__content">
-                <h1>Stay updated!</h1>
-                <p>Join 60,000+ product managers receiving monthly updates on:</p>
-                <ul>
-                    <li>Product discovery and building what matters</li>
-                    <li>Measuring to ensure updates are a success</li>
-                    <li>And much more!</li>
-                </ul>
+            <div class="email__section__img"></div>
+            <div class="email__section__content__container">
+                <div class="email__section__content">
+                    <h1>Stay updated!</h1>
+                    <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                    <ul>
+                        <li>Product discovery and building what matters</li>
+                        <li>Measuring to ensure updates are a success</li>
+                        <li>And much more!</li>
+                    </ul>
+                </div>
+
+                <form class="email__section__form">
+                    <label for="email">Email Adress</label>
+                    <input type="email" name="email" id="emailInput" placeholder="email@company.com" required>
+                    <a class="submitMessage" href="success.html" onclick="validateForm(event)">Subscribe to monthly
+                        newsletter</a>
+                </form>
             </div>
-
-            <form class="email__section__form" action="#" method="post">
-                <label for="email">Email Adress</label>
-                <input type="email" name="email" id="emailInput" placeholder="email@company.com">
-                <button type="submit">Subscribe to monthly newsletter</button>
-            </form>
         </div>
     </section>
-
-    <section class="success__message">
-        <img src="./assets/icons/icon-success.svg" alt="Success Icon">
-        <div class="success__message__container">
-            <h2>Thanks for subscribing!</h2>
-            <p>A confirmation email has been sent to <span>ash@loremcompany.com. </span>Please open it and click the
-                button inside
-                to confirm your subscription.</p>
-            <button type="button">Dismiss message</button>
-        </div>
-    </section>
+    <script src="main.js"></script>
 </body>
 
 </html>
