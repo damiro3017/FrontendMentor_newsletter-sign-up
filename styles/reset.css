@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Cabin", sans-serif;
 }
 
 html,
@@ -12,7 +11,7 @@ body {
 }
 
 body {
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 ul,
@@ -25,14 +24,13 @@ a {
   color: inherit;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 button {
-  background: none;
   border: none;
   cursor: pointer;
+}
+
+label,
+input {
+  color: var(--Blue-800);
+  font-family: "Roboto", sans-serif;
 }

@@ -19,7 +19,7 @@ The designs were created to the following widths:
 
 - Blue 800: hsl(234, 29%, 20%)
 - Blue 700: hsl(235, 18%, 26%)
-- Grey: hsl(0, 0%,58%)
+- Grey: hsl(0, 0%, 58%)
 - White: hsl(0, 0%, 100%)
 
 ## Typography

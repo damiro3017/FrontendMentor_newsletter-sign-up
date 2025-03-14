@@ -7,41 +7,42 @@
     <title>LandingPage03 | Practice</title>
     <!-- ICON -->
     <link rel="icon" href="./assets/icons/favicon-32x32.png" type="image/x-icon">
-    <!-- BOX ICONS -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 
 <body>
-    <h1>New Landing!</h1>
-    <!-- Sign-up form start -->
+    <section class="email__section">
+        <div class="email__section__img"></div>
+        <div class="email__section__container">
+            <div class="email__section__content">
+                <h1>Stay updated!</h1>
+                <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                <ul>
+                    <li>Product discovery and building what matters</li>
+                    <li>Measuring to ensure updates are a success</li>
+                    <li>And much more!</li>
+                </ul>
+            </div>
 
-    Stay updated!
+            <form class="email__section__form" action="#" method="post">
+                <label for="email">Email Adress</label>
+                <input type="email" name="email" id="emailInput" placeholder="email@company.com">
+                <button type="submit">Subscribe to monthly newsletter</button>
+            </form>
+        </div>
+    </section>
 
-    Join 60,000+ product managers receiving monthly updates on:
-
-    Product discovery and building what matters
-    Measuring to ensure updates are a success
-    And much more!
-
-    Email address
-    email@company.com
-
-    Subscribe to monthly newsletter
-
-    <!-- Sign-up form end -->
-
-    <!-- Success message start -->
-
-    Thanks for subscribing!
-
-    A confirmation email has been sent to ash@loremcompany.com.
-    Please open it and click the button inside to confirm your subscription.
-
-    Dismiss message
-
-    <!-- Success message end -->
+    <section class="success__message">
+        <img src="./assets/icons/icon-success.svg" alt="Success Icon">
+        <div class="success__message__container">
+            <h2>Thanks for subscribing!</h2>
+            <p>A confirmation email has been sent to <span>ash@loremcompany.com. </span>Please open it and click the
+                button inside
+                to confirm your subscription.</p>
+            <button type="button">Dismiss message</button>
+        </div>
+    </section>
 </body>
 
 </html>
